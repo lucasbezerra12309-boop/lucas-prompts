@@ -1,1 +1,92 @@
+/* ===========================
+   RESET
+=========================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#070707;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* ===========================
+   FUNDO
+=========================== */
+
+.background{
+    position:fixed;
+    inset:0;
+    z-index:-2;
+    background:
+    radial-gradient(circle at top,#ff000025 0%,transparent 40%),
+    radial-gradient(circle at bottom,#7a000020 0%,transparent 40%),
+    #070707;
+}
+
+.background::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:
+    linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);
+    background-size:40px 40px;
+    opacity:.4;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
+header{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:999;
+
+    backdrop-filter:blur(18px);
+    background:rgba(10,10,10,.65);
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+.logo img{
+    height:55px;
+}
+
+nav{
+    display:flex;
+    gap:35px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#ff3030;
+}
+
+.menu-mobile{
+    display:none;
+    font-size:32px;
+    cursor:pointer;
+}
