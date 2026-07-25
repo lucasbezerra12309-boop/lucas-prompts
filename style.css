@@ -225,3 +225,71 @@ nav a:hover{
     font-size:20px;
     font-weight:600;
 }
+
+/* ===========================
+   PRODUTOS
+=========================== */
+
+.products{
+    padding:80px 8%;
+}
+
+.products h2{
+    text-align:center;
+    color:#fff;
+    font-size:36px;
+    margin-bottom:40px;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.product-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:30px;
+    text-align:center;
+    transition:.35s;
+    backdrop-filter:blur(12px);
+}
+
+.product-card:hover{
+    transform:translateY(-10px);
+    border-color:#ff2d2d;
+    box-shadow:0 0 35px rgba(255,0,0,.35);
+}
+
+.product-image{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.product-card h3{
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.product-card p{
+    color:#bbb;
+    line-height:1.6;
+    margin-bottom:25px;
+}
+
+.btn-product{
+    display:inline-block;
+    background:#ff2d2d;
+    color:#fff;
+    text-decoration:none;
+    padding:12px 30px;
+    border-radius:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-product:hover{
+    background:#ff4d4d;
+}
