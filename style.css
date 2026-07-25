@@ -18,3 +18,74 @@ overflow-x:hidden;
 .btn-product:hover{
 background:#ff4d4d;
 }
+
+/* ===========================
+   RESPONSIVO
+=========================== */
+
+.menu-toggle{
+    display:none;
+}
+
+@media (max-width:768px){
+
+.header{
+    padding:15px;
+}
+
+.nav{
+    display:none;
+}
+
+.menu-toggle{
+    display:block;
+    background:none;
+    border:none;
+    color:#fff;
+    font-size:30px;
+    cursor:pointer;
+}
+
+.logo h2{
+    font-size:20px;
+}
+
+.logo span{
+    font-size:12px;
+}
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+    padding:120px 25px 60px;
+}
+
+.hero-text{
+    width:100%;
+}
+
+.hero h1{
+    font-size:48px;
+    line-height:1.1;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.hero-buttons{
+    flex-direction:column;
+    gap:15px;
+}
+
+.btn-primary,
+.btn-secondary{
+    width:100%;
+    text-align:center;
+}
+
+.hero-banner img{
+    width:100%;
+    max-width:380px;
+}
+}
